@@ -483,11 +483,129 @@ footer a:hover {
 		background-image:url(../images/banner_625.jpg);
 		background-position: left top;
 	}
+	header a.logo{
+		width: 100%;
+		height: 66px;
+		left: 0px;
+		top: 0px;
+		background-color: rgba(0,0,0,0.65);
+		background-size: 112px 46px;
+		background-position: 20px center;	
+	}
+	header div.hero{
+		width: 300px;
+		top: 85px;
+		left: 130px;
+	}
+	header div.hero h1{
+		margin-bottom: 10px;
+	}
+	/*Section - Main*/
+	section.main aside{
+		width: 100%;
+		float: none;
+		text-align: left;
+	}
+	section.main aside div.content{
+		margin:8px 20px 8px 0;
+		padding: 5px 0px 10px 85px;
+		background-size: 50px;
+		background-position: 20px 5px;
+	}
+	/*Section - atmosphere*/
+	section.atmosphere article{
+		padding: 160px 20px 0px 0px;
+		background-size: 300px auto;
+		min-height: initial;
+	}
+
+	/*Section- hot to*/
+	section.how-to aside{
+		width:100%;
+		float: none;
+		margin: 0;
+		position: relative; 
+	}
+
+	section.how-to blockquote{
+		margin: 0 20px 0 40px;
+		width: 90%;
+		padding: 1px 0px 20px 0px;
+		position: relative;
+	}
+
+	section.how-to blockquote p.credit{
+
+	}
+	section.how-to aside div.content{
+		padding: 20px 20px 20px 150px;
+	}
+
+	section.how-to aside div.content p{
+		font-size: .9em;
+	}
+
+	section.how-to aside div.content img{
+		display: inline-block;
+		width: 125px;
+		position: absolute;
+		top: 30px;
+		left: 0px;
+	}
 	/*Navigation*/
 	nav{
 		position: static;
 		width: auto;
 		padding: 20px 15px;
 		background-color: #4b0a0c;
+	}
+
+	nav ul,
+	nav ul ul,
+	nav ul ul ul{
+		display: block;
+		position: static;
+	}
+	nav > ul{
+		padding: 0;
+	}
+	nav > ul > li{
+		float: none;
+		margin-top: 25px;
+	}
+
+	nav ul li:hover{
+		background: none;
+	}
+
+	nav ul li a{
+		width: auto;
+		display: block;
+		margin: 8px 10px;
+		padding: 8px 15px;
+		border:1px solid rgba(255,255,255,0.25);
+	}
+	nav ul li a:hover{
+		background-color: rgba(255,255,255,.2);
+	}
+	nav ul ul{
+		background: none;
+	}
+	nav ul ul li a{
+		margin-left: 30px;
+	}
+	nav ul ul ul li a{
+		margin-left: 60px;
+	}
+	nav a[aria-haspopup="true"]::after{
+		display: none;
+	}
+	/*Footer*/
+	footer div.content{
+		display: block;
+		margin-top: 15px;
+	}
+	footer div.content a{
+		margin: 0 20px 0 0;
 	}
 }
